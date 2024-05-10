@@ -1,0 +1,72 @@
+
+html{background-color: rgb(253, 253, 131);
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui o espaço entre as caixas */
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.box {
+    width: calc(25% - 20px); /* Calcula a largura das caixas, com margem à direita */
+    margin-bottom: 20px;
+    background-color: #80bfff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10%;
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px); /* Em telas menores, duas caixas por linha */
+    }
+}
+@media (max-width: 480px) {
+    .box {
+        width: calc(100% - 20px); /* Em telas muito pequenas, uma caixa por linha */
+    }
+}
+h1{
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+  /*  background-color: #80bfff; */
+    justify-content: center;
+}
+  
+.flex-container > div {
+    background-color: #ffffff;
+    width: 100px;
+    margin: 10px;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+
+  }
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px red;
+}
+a {
+    font-size: 150%;
+
+}
+.centro {
+    text-align: center;
+}
+
